@@ -1,9 +1,10 @@
-class Solution:
-    def alternatingSum(self, nums: List[int]) -> int:
+class Solution(object):
+    def alternatingSum(self, nums):
         sum=0
-        for idx,i in enumerate(nums):
-            if idx%2==0:
-                sum+=i
+        for i in range(len(nums)):
+            if i%2==0:
+                sum+=nums[i]
             else:
-                sum-=i
+                sum-=nums[i]
         return sum
+        
