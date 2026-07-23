@@ -1,10 +1,13 @@
 class Solution(object):
     def moveZeroes(self, nums):
-        j=0 #points to nxt idx
+        ans1=[]
+        ans2=[]
         for i in range(len(nums)):
             if nums[i]!=0:
-                nums[i],nums[j]=nums[j],nums[i]
-                j+=1
-        return nums
+                ans1.append(nums[i])
+            else:
+                ans2.append(nums[i])
+        nums[:]=ans1+ans2
+        
   
         
