@@ -1,7 +1,6 @@
-class Solution(object):
-    def removeDuplicates(self, nums):
+class Solution:
+    def removeDuplicates(self, nums: List[int]) -> int:
         nums[:]=sorted(set(nums))
         return len(nums)
-
 
         
