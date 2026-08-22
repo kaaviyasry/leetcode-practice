@@ -1,12 +1,11 @@
 class Solution:
     def checkDivisibility(self, n: int) -> bool:
+        s=list(str(n))
+        prod=1
         sum=0
-        mul=1
-        num=list(str(n))
-        for i in range(len(num)):
-            sum+=int(num[i])
-            mul*=int(num[i])
-        ans=sum+mul
+        for i in range(len(s)):
+            sum+=int(s[i])
+            prod*=int(s[i])
+        ans=prod+sum
         return n%ans==0
-
         
