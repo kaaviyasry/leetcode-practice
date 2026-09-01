@@ -1,4 +1,6 @@
 class Solution:
     def findPeakElement(self, nums: List[int]) -> int:
-        return nums.index(max(nums))
+        maxi=max(nums)
+        return nums.index(maxi)
+        #return nums.index(max(nums))
         
