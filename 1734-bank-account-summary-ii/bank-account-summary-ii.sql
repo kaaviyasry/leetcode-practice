@@ -1,0 +1,2 @@
+# Write your MySQL query statement below
+select users.name,sum(amount) as balance from users join transactions on users.account=transactions.account group by users.account,users.name having sum(amount)>10000 ;
